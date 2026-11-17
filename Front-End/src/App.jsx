@@ -100,17 +100,14 @@ export default function App() {
         <div>
           {/* Logo & Lab Branding (STAS-R + Logo G Sesuai Asli) */}
           <div className="p-5 border-b border-slate-100">
-            <div className="flex items-center gap-1 select-none">
-              <span className="font-extrabold text-2xl tracking-tight text-[#0ab600] font-sans">
-                STAS-R
-              </span>
+            <div className="flex items-center select-none py-1">
               <img 
-                src="/images/stas_g_logo.png" 
-                alt="G" 
-                className="h-6 w-6 object-contain inline-block -ml-0.5" 
+                src="/images/stas_rg_clean.png" 
+                alt="STAS-RG" 
+                className="h-7 w-auto object-contain" 
               />
             </div>
-            <p className="text-[11px] text-slate-400 font-medium mt-0.5">Smart Farming Telkom Univ</p>
+            <p className="text-[11px] text-slate-400 font-medium mt-1">Smart Farming Telkom Univ</p>
           </div>
 
           {/* Menu Items (Persis Seperti Drawer Flutter) */}
@@ -864,14 +861,11 @@ export default function App() {
 
               {/* Footer Section (Sesuai Asli: Alamat Telkom University & Sosmed) */}
               <div className="bg-slate-100 rounded-2xl p-6 text-center space-y-3 mt-8">
-                <div className="flex items-center justify-center gap-1 select-none">
-                  <span className="font-extrabold text-2xl tracking-tight text-[#0ab600] font-sans">
-                    STAS-R
-                  </span>
+                <div className="flex items-center justify-center select-none py-1">
                   <img 
-                    src="/images/stas_g_logo.png" 
-                    alt="G" 
-                    className="h-6 w-6 object-contain inline-block -ml-0.5" 
+                    src="/images/stas_rg_clean.png" 
+                    alt="STAS-RG" 
+                    className="h-9 w-auto object-contain" 
                   />
                 </div>
                 <h4 className="font-bold text-slate-800 text-sm">Smart Transportation and Automation System Research Group</h4>
