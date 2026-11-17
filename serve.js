@@ -3,8 +3,8 @@ const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
 
-const webDir = path.join(__dirname, 'Front-End', 'build', 'web');
-const PORT = process.env.PORT || 8080;
+const webDir = path.join(__dirname, 'Front-End', 'dist');
+const PORT = process.env.PORT || 5173;
 
 const mimeTypes = {
   '.html': 'text/html; charset=utf-8',
@@ -44,7 +44,7 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`\n==================================================`);
-  console.log(`  Sheep Cage Monitoring Web Dashboard berjalan!`);
+  console.log(`  STAS-RG Sheep Monitoring Dashboard berjalan!`);
   console.log(`  Buka browser di: http://localhost:${PORT}`);
   console.log(`==================================================\n`);
   exec(`start http://localhost:${PORT}`);
