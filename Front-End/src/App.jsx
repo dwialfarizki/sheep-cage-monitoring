@@ -98,17 +98,19 @@ export default function App() {
       {/* ================= 1. SIDEBAR (SESUAI DRAWER ASLI) ================= */}
       <aside className="w-full md:w-64 bg-white border-r border-slate-200 flex flex-col justify-between shrink-0 shadow-sm">
         <div>
-          {/* Logo & Lab Branding */}
-          <div className="p-5 border-b border-slate-100 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 p-1 flex items-center justify-center shadow-sm">
-              <img src="/images/logo_keren.png" alt="STAS-RG" className="w-full h-full object-contain" />
+          {/* Logo & Lab Branding (STAS-R + Logo G Sesuai Asli) */}
+          <div className="p-5 border-b border-slate-100">
+            <div className="flex items-center gap-1 select-none">
+              <span className="font-extrabold text-2xl tracking-tight text-[#0ab600] font-sans">
+                STAS-R
+              </span>
+              <img 
+                src="/images/stas_g_logo.png" 
+                alt="G" 
+                className="h-6 w-6 object-contain inline-block -ml-0.5" 
+              />
             </div>
-            <div>
-              <h1 className="font-extrabold text-base tracking-tight text-slate-900">
-                STAS<span className="text-emerald-500">-</span>RG
-              </h1>
-              <p className="text-[11px] text-slate-400 font-medium">Smart Farming Telkom Univ</p>
-            </div>
+            <p className="text-[11px] text-slate-400 font-medium mt-0.5">Smart Farming Telkom Univ</p>
           </div>
 
           {/* Menu Items (Persis Seperti Drawer Flutter) */}
@@ -862,10 +864,17 @@ export default function App() {
 
               {/* Footer Section (Sesuai Asli: Alamat Telkom University & Sosmed) */}
               <div className="bg-slate-100 rounded-2xl p-6 text-center space-y-3 mt-8">
-                <div className="w-10 h-10 rounded-xl bg-white p-1 mx-auto shadow-sm">
-                  <img src="/images/logo_keren.png" alt="STAS-RG" className="w-full h-full object-contain" />
+                <div className="flex items-center justify-center gap-1 select-none">
+                  <span className="font-extrabold text-2xl tracking-tight text-[#0ab600] font-sans">
+                    STAS-R
+                  </span>
+                  <img 
+                    src="/images/stas_g_logo.png" 
+                    alt="G" 
+                    className="h-6 w-6 object-contain inline-block -ml-0.5" 
+                  />
                 </div>
-                <h4 className="font-bold text-slate-800 text-sm">STAS-RG (Smart Transportation and Automation System)</h4>
+                <h4 className="font-bold text-slate-800 text-sm">Smart Transportation and Automation System Research Group</h4>
                 <p className="text-xs text-slate-500 max-w-md mx-auto">
                   Jl. Telekomunikasi No.1, Sukapura, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257
                 </p>
